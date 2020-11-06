@@ -1,0 +1,59 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    cursor: default;
+}
+.contact h2, .contact p {
+    color: black;
+    cursor: default;
+}
+#social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#social a {
+    width: 5%;
+    display: grid;
+    padding: 5vh 5vh;
+    place-items: center;
+    place-content: center;
+    transition: transform 300ms ease-in;
+    -webkit-transition: transform 300ms ease-in;
+    -moz-transition: transform 300ms ease-in;
+    -ms-transition: transform 300ms ease-in;
+    -o-transition: transform 300ms ease-in;
+}
+#social a:hover {
+    transform: translateY(-3vh) rotate(4deg);
+    -webkit-transform: translateY(-3vh) rotate(4deg);
+    -moz-transform: translateY(-3vh) rotate(4deg);
+    -ms-transform: translateY(-3vh) rotate(4deg);
+    -o-transform: translateY(-3vh) rotate(4deg);
+}
+#social a:active {
+    transform: rotate(-8deg) translateY(-3vh);
+    -webkit-transform: rotate(-8deg) translateY(-3vh);
+    -moz-transform: rotate(-8deg) translateY(-3vh);
+    -ms-transform: rotate(-8deg) translateY(-3vh);
+    -o-transform: rotate(-8deg) translateY(-3vh);
+}
+a img {
+    width: 100%;
+}
+@media only screen and (max-width: 700px) {
+    #social a {
+        width: 10%;
+    }
+}
+@media only screen and (max-width: 678px) {
+    #social a {
+        width: 10%;
+        padding: 3vh 3vh;
+    }
+}
